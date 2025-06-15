@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.banner2-container {
+    width: 100%;
+    height: 100vh;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 1100px;
+    /* ✅ tüm banner'lar için ortak sınır */
+    margin: 0 auto;
+}
+
+.banner2-subtitle {
+    font-size: 42px;
+    font-weight: normal;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.banner2-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+    color: #000;
+    margin-top: 50px;
+    /* 🔽 Daha aşağı indirir */
+    margin-left: 180px;
+    /* ➡️ Daha sağa kaydırır */
+}
+
+.banner2-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    /* 🪟 Aradaki mesafeyi artırdık (eski: 60px) */
+    flex-wrap: wrap;
+}
+
+.banner2-student {
+    width: 360px;
+    /* 🔍 Öğrenci görseli büyütüldü (eski: 300px) */
+    max-width: 100%;
+}
+
+.banner2-register-box {
+    position: relative;
+    display: inline-block;
+}
+
+.register-img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.register-text {
+    position: absolute;
+    bottom: 65px;
+    /* ⬇️ alta yerleştirir */
+    left: -110px;
+    /* ⬅️ görselin içine sola doğru */
+    text-align: left;
+    color: #0056d6;
+    line-height: 1.2;
+}
+
+.register-text .small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.register-text .big {
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    margin-top: 8px;
+    /* metinler arası boşluk */
+
+}

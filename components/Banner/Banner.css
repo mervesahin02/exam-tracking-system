@@ -1,0 +1,51 @@
+.slider-container {
+    width: 100vw;
+    height: 100vh;
+    max-height: 700px;
+    /* 800 sabitlendi */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Dots */
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    bottom: -40px;
+    /* 🔻 Aşağıya indirildi */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}

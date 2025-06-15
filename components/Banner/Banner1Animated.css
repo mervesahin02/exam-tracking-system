@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.banner1-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    overflow: hidden;
+    font-family: 'Secular One', sans-serif;
+}
+
+.student-img {
+    width: 550px;
+    z-index: 1;
+}
+
+/* Balon genel */
+.balloon {
+    position: absolute;
+    width: 220px;
+}
+
+.balloon img {
+    width: 100%;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Yansıma efekti */
+.balloon.left-top img,
+.balloon.left-bottom img {
+    transform: scaleX(-1) rotateY(0deg);
+    opacity: 0.95;
+}
+
+/* SOL ÜST */
+.balloon.left-top {
+    top: 13%;
+    left: 3%;
+}
+
+/* SOL ALT */
+.balloon.left-bottom {
+    bottom: 15%;
+    left: 3%;
+}
+
+/* SAĞ */
+.balloon.right {
+    top: 20%;
+    right: 4%;
+}
+
+/* Metin */
+.balloon-text {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    width: 68%;
+    font-size: 12.5px;
+    line-height: 1.25;
+    color: #000;
+    word-break: break-word;
+    text-align: left;
+}
+
+.why-us-title {
+    position: absolute;
+    top: 3.5%;
+    font-size: 38px;
+    font-family: 'Secular One', sans-serif;
+    color: #111;
+}

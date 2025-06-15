@@ -1,0 +1,90 @@
+.header {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active underline stays visible */
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* 🎨 Different underline colors for each button */
+.nav-link.home.active::after,
+.nav-link.home:hover::after {
+    background-color: #e74c3c;
+    /* kırmızı */
+}
+
+.nav-link.login.active::after,
+.nav-link.login:hover::after {
+    background-color: #2980b9;
+    /* mavi */
+}
+
+.nav-link.sayac.active::after,
+.nav-link.sayac:hover::after {
+    background-color: #f312d1;
+    /* turuncu */
+}
+
+.nav-link.moduller.active::after,
+.nav-link.moduller:hover::after {
+    background-color: #27ae60;
+    /* yeşil */
+}
+
+.nav-link.sinavlar.active::after,
+.nav-link.sinavlar:hover::after {
+    background-color: #8e44ad;
+    /* mor */
+}
+
+.nav-link.iletisim.active::after,
+.nav-link.iletisim:hover::after {
+    background-color: #d35400;
+    /* koyu turuncu */
+}
